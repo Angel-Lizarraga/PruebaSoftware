@@ -8,24 +8,18 @@ package angel.pruebasoftware;
  *
  * @author aanng
  */
-public class SolicitanteDeEscenario {
-    private String nombre;
-    private String email;
+class SolicitanteDeEscenario extends Visitante {
     private String motivo;
 
     public void solicitarEscenario() {
-        // Código para que el solicitante solicite un escenario
+        // Implementación de solicitar escenario
     }
 
     public void editarSolicitud() {
-        // Código para que el solicitante edite una solicitud
+        // Implementación de editar solicitud
     }
 
     public void borrarSolicitud() {
-        // Código para que el solicitante borre una solicitud
-    }
-
-    public void consultarCalendario() {
-        // Código para permitir al solicitante consultar el calendario de eventos
+        // Implementación de borrar solicitud
     }
 }
