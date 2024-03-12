@@ -12,31 +12,43 @@ public class Administrador {
     private String nombre;
     private String email;
 
+    public Administrador(String nombre, String email) {
+        this.nombre = nombre;
+        this.email = email;
+    }
+
     public void autenticar() {
-        // Código para autenticar al administrador
+        // Implementación de autenticación
+        System.out.println("Autenticando...");
     }
 
     public void consultarSolicitudes() {
-        // Código para consultar las solicitudes pendientes
+        // Implementación de consulta de solicitudes
+        System.out.println("Consultando solicitudes...");
     }
 
     public void aceptarSolicitud() {
-        // Código para aceptar una solicitud
+        // Implementación de aceptar solicitud
+        System.out.println("Aceptando solicitud...");
     }
 
     public void rechazarSolicitud() {
-        // Código para rechazar una solicitud
+        // Implementación de rechazar solicitud
+        System.out.println("Rechazando solicitud...");
     }
 
     public void publicarEvento() {
-        // Código para publicar un evento en el calendario
+        // Implementación de publicar evento
+        System.out.println("Publicando evento...");
     }
 
     public void consultarCalendario() {
-        // Código para consultar el calendario de eventos
+        // Implementación de consultar calendario
+        System.out.println("Consultando calendario...");
     }
 
     public void editarCalendario() {
-        // Código para editar el calendario de eventos
+        // Implementación de editar calendario
+        System.out.println("Editando calendario...");
     }
 }

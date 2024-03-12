@@ -10,8 +10,15 @@ package angel.pruebasoftware;
  */
 public class Visitante {
     private String nombre;
+    private String email;
+
+    public Visitante(String nombre, String email) {
+        this.nombre = nombre;
+        this.email = email;
+    }
 
     public void consultarCalendario() {
-        // Código para permitir al visitante consultar el calendario de eventos
+        // Implementación de consultar calendario
+        System.out.println("Consultando calendario...");
     }
 }

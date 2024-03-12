@@ -4,6 +4,9 @@
  */
 package angel.pruebasoftware;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author aanng
@@ -12,36 +15,12 @@ public class Escenario {
     private String nombre;
     private String ubicacion;
     private int capacidad;
+    private List<Tablon> tablones;
 
-    // Constructor
     public Escenario(String nombre, String ubicacion, int capacidad) {
         this.nombre = nombre;
         this.ubicacion = ubicacion;
         this.capacidad = capacidad;
-    }
-
-    // Métodos de acceso (getters y setters)
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getUbicacion() {
-        return ubicacion;
-    }
-
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
-    }
-
-    public int getCapacidad() {
-        return capacidad;
-    }
-
-    public void setCapacidad(int capacidad) {
-        this.capacidad = capacidad;
+        this.tablones = new ArrayList<>();
     }
 }

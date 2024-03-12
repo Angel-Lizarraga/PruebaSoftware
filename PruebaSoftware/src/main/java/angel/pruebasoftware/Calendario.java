@@ -14,22 +14,20 @@ import java.util.List;
 public class Calendario {
     private List<Evento> eventos;
 
-    // Constructor
     public Calendario() {
         this.eventos = new ArrayList<>();
     }
 
-    // Método para agregar un evento al calendario
     public void agregarEvento(Evento evento) {
         eventos.add(evento);
+        System.out.println("Evento agregado al calendario: " + evento.getNombre());
     }
 
-    // Método para eliminar un evento del calendario
     public void eliminarEvento(Evento evento) {
         eventos.remove(evento);
+        System.out.println("Evento eliminado del calendario: " + evento.getNombre());
     }
 
-    // Método para consultar todos los eventos del calendario
     public List<Evento> consultarEventos() {
         return eventos;
     }
