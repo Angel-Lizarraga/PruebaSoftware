@@ -10,12 +10,15 @@ package angel.pruebasoftware;
  */
 public class Administrador {
     private String nombre;
-    private String email;
-
+    private Escenario escenario; // Relación entre Administrador y Escenario
+    private Calendario calendario; // Relación entre Administrador y Calendario
+    
     public Administrador(String nombre, String email) {
         this.nombre = nombre;
         this.email = email;
     }
+    private String email;
+
 
     public void autenticar() {
         // Implementación de autenticación
@@ -50,5 +53,17 @@ public class Administrador {
     public void editarCalendario() {
         // Implementación de editar calendario
         System.out.println("Editando calendario...");
+    }
+    
+    public void administraEscenario(Escenario escenario) {
+        // Implementación de administrar escenario
+        this.escenario = escenario; // El administrador ahora administra el escenario
+        System.out.println("Administrando escenario...");
+    }
+
+    public void gestionaCalendario(Calendario calendario) {
+        // Implementación de gestionar calendario
+        this.calendario = calendario; // El administrador ahora gestiona el calendario
+        System.out.println("Gestionando calendario...");
     }
 }

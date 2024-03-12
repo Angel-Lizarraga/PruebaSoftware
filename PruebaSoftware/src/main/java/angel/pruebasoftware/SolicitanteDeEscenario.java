@@ -10,6 +10,7 @@ package angel.pruebasoftware;
  */
 public class SolicitanteDeEscenario extends Visitante {
     private String motivo;
+    private Escenario escenario;
 
     public SolicitanteDeEscenario(String nombre, String email, String motivo) {
         super(nombre, email);
@@ -29,5 +30,21 @@ public class SolicitanteDeEscenario extends Visitante {
     public void borrarSolicitud() {
         // Implementación de borrar solicitud
         System.out.println("Borrando solicitud...");
+    }
+    
+    public void ocuparEscenario(Escenario escenario) {
+        // Implementación de ocupar escenario
+        this.escenario = escenario; // El solicitante ahora ocupa el escenario
+        System.out.println("Ocupando escenario...");
+    }
+
+    public void desocuparEscenario() {
+        // Implementación de desocupar escenario
+        this.escenario = null; // El solicitante ya no ocupa ningún escenario
+        System.out.println("Desocupando escenario...");
+    }
+
+    public Escenario getEscenario() {
+        return escenario;
     }
 }
